@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+ frontend:
+   build: .
+   container_name: be
+   image: yubisayu/housy-be:stable
+   stdin_open: true
+   ports:
+    - 5050:5000
